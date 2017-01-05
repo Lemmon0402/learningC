@@ -7,6 +7,7 @@
 
 #include<stdio.h>
 
+/*超速测试
 int main()
 {
     int velocity;
@@ -17,3 +18,6 @@ int main()
     else
         printf("normal\n");
 }
+*/
+
+
