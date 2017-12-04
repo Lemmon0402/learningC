@@ -8,8 +8,8 @@ secondary line
 >this is a ref
 >this is a ref too
 
--line1
--line2
--line3
+- line1
+- line2
+- line3
 
 
