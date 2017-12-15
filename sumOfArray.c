@@ -7,6 +7,8 @@
 
 #include<stdio.h>
 
+int sum(int *, int);
+
 int main()
 {
     int i;
@@ -21,10 +23,10 @@ int main()
     return 0;
 }
 
-int sum(int x[], int n)
+int sum(int *x, int n)
 {
     int j, t=0;
     for (j=0; j<n; j++)
-        t += x[j];
-    return 0;
+        t += *(x+j);
+    return t;
 }
