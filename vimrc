@@ -123,7 +123,7 @@ func SetTitle()
         call append(line("."),"# coding=utf-8")
 	    call append(line(".")+1, "") 
 
-    elseif &filetype == 'pl'
+    elseif &filetype == 'perl'
         call setline(1,"#!/usr/bin/env perl")
         call append(line("."),"# coding=utf-8")
 	    call append(line(".")+1, "") 
@@ -228,7 +228,7 @@ func! CompileRunGcc()
     elseif &filetype == 'mkd'
         exec "!~/.vim/markdown.pl % > %.html &"
         exec "!firefox %.html &"
-    elseif &filetype == 'pl'
+    elseif &filetype == 'perl'
         exec "!perl %"
         exec "!time perl%"
 	endif
